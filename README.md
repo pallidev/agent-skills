@@ -7,13 +7,19 @@ Claude Code 커스텀 스킬 모음.
 ### 특정 스킬 설치
 
 ```bash
-npx skills add pallidev/agent-skills@build-loop
+npx skills add pallidev/agent-skills --skill build-loop
 ```
 
 ### 전체 스킬 설치
 
 ```bash
 npx skills add pallidev/agent-skills
+```
+
+### 글로벌 설치 (모든 프로젝트에서 사용)
+
+```bash
+npx skills add pallidev/agent-skills --skill build-loop -g
 ```
 
 ## 스킬 목록
@@ -30,5 +36,5 @@ npx skills add pallidev/agent-skills
 ## 제거
 
 ```bash
-npx skills remove pallidev/agent-skills@build-loop
+npx skills remove build-loop
 ```
