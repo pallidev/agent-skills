@@ -4,24 +4,16 @@ Claude Code 커스텀 스킬 모음.
 
 ## 설치
 
+### 특정 스킬 설치
+
+```bash
+npx skills add pallidev/agent-skills@build-loop
+```
+
 ### 전체 스킬 설치
 
 ```bash
-git clone https://github.com/pallidev/agent-skills.git
-cd agent-skills
-bash skills.sh
-```
-
-### 특정 스킬만 설치
-
-```bash
-bash skills.sh build-loop
-```
-
-### 한 줄 설치 (curl)
-
-```bash
-bash <(curl -s https://raw.githubusercontent.com/pallidev/agent-skills/main/skills.sh) build-loop
+npx skills add pallidev/agent-skills
 ```
 
 ## 스킬 목록
@@ -32,12 +24,11 @@ bash <(curl -s https://raw.githubusercontent.com/pallidev/agent-skills/main/skil
 
 ## 스킬 추가 방법
 
-1. 새 디렉토리 생성: `mkdir my-skill`
+1. `skills/` 아래에 새 디렉토리 생성: `mkdir skills/my-skill`
 2. `SKILL.md` 파일 작성 (frontmatter에 name, description 포함)
-3. `skills.sh`가 자동으로 인식
 
 ## 제거
 
 ```bash
-rm ~/.claude/skills/<스킬명>
+npx skills remove pallidev/agent-skills@build-loop
 ```
